@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todotask">
+            <h2>Taskify <img src="images/todoicon1.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="openModal()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>When is the deadline?</h3>
+            <input type="date" id="deadline-date">
+            <input type="time" id="deadline-time">
+            <button onclick="confirmDeadline()">Set Deadline</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
