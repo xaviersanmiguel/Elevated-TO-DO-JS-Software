@@ -190,7 +190,6 @@ ul li span {
     justify-content: center;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
